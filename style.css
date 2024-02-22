@@ -1,102 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #355655;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #355655;
 }
 
 @font-face {
-    font-family: 'Digital-7 Mono';
-    src: url('digital-7\ \(mono\).ttf');
+  font-family: "Digital-7 Mono";
+  src: url("digital-7\ \(mono\).ttf");
 }
 
 h1 {
-    color: red;
-    text-align: center;
+  color: red;
+  text-align: center;
 }
 
 #calculadora {
-    margin: auto;
-    height: fit-content;
-    width: fit-content;
-    display: block;
-    border: none;
-    border-radius: 10px;
-    align-self: center;
-    display: grid;
-    background-color: #64a8a6;
-    grid-template-columns: repeat(4, 1fr);
-    box-shadow:
-        0px 0px 0px 1px #4e8381 inset,
-        0px 0px 0px 2px #74b6b4 inset,
-        0px 4px 0px 0px #4a7c7b,
-        0px 5px 0px 0px #355655,
-        0px 5px 0px 0px rgba(0, 0, 0, .15);
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  align-self: center;
+  display: grid;
+  background-color: #64a8a6;
+  grid-template-columns: repeat(4, 1fr);
+  box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset,
+    0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655,
+    0px 5px 0px 0px rgba(0, 0, 0, 0.15);
 }
 
 #igual {
-
-    grid-column-start: 3;
-    grid-column-end: span 2;
-    width: 163px
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  width: 163px;
 }
 
-#pantalla {
-    background-color: #38c0bb;
-    font-family: 'Digital-7 Mono', sans-serif;
-    padding: 25px;
-    font-size: 75px;
-    border-bottom: 1px solid black;
-    border-radius: 10px;
-    text-align: center;
-    grid-column: 1 / -1;
+#display {
+  background-color: #38c0bb;
+  font-family: "Digital-7 Mono", sans-serif;
+  padding: 25px;
+  font-size: 75px;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  grid-column: 1 / -1;
 }
 
 .button {
-    position: relative;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    margin: 30px;
-    border: none;
-    border-radius: 5px;
-    box-shadow:
-        0px 0px 0px 1px #4e8381 inset,
-        0px 0px 0px 2px #74b6b4 inset,
-        0px 4px 0px 0px #4a7c7b,
-        0px 5px 0px 0px #355655,
-        0px 5px 0px 0px rgba(0, 0, 0, .15);
-    ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #43a09d;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset,
+    0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655,
+    0px 5px 0px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #43a09d;
 }
 
 .button:hover {
-    background-color: #73c2c0;
+  background-color: #73c2c0;
 }
 
 .button:active {
-    background-color: #64a8a6;
-    box-shadow:
-        0px 0px 0px 1px #589391 inset,
-        0px 0px 0px 2px #65a9a7 inset,
-        0px 0px 0px 0px #4a7c7b,
-        0px 1px 0px 0px #355655,
-        0px 2px 0px 0px rgba(0, 0, 0, .15);
-    top: 3px;
+  background-color: #64a8a6;
+  box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset,
+    0px 0px 0px 0px #4a7c7b, 0px 1px 0px 0px #355655,
+    0px 2px 0px 0px rgba(0, 0, 0, 0.15);
+  top: 3px;
 }
 
 #cancela {
-    background-color: rgb(204, 76, 76);
+  background-color: rgb(204, 76, 76);
 }
 
 #cancela:hover {
-    background-color: red;
+  background-color: red;
 }
 
 #cancela:active {
-    background-color: rgb(204, 76, 76);
+  background-color: rgb(204, 76, 76);
 }

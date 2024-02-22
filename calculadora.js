@@ -1,16 +1,18 @@
-const display = document.getElementById("pantalla");
-
-let value;
-const bottons = document.querySelectorAll(".button");
+const display = document.getElementById("#display");
+const deleting = document.getElementById("#deleting");
+//
+const bottons = document.querySelector("button");
 
 //diplay
+
 const toDisplay = (value) => {
   display.value += value;
 };
 //limpia diplay
-const clearDisplay = () => {
-  display.value = "";
-};
+
+// const clearDisplay = () => {
+//   display.value = "";
+// };
 //preparar array
 const newExpression = (expression) => {
   const regex = /(\d+(\.\d+)?)\s*([*/+-](\d+(\.\d+)?))+/g;
@@ -51,4 +53,5 @@ const calculate = (parts) => {
   }
   return result;
 };
-document.addEventListener("DOMContentLoaded", display);
+document.addEventListener("click", () => {});
+deleting.addEventListener("click", clearDisplay);
